@@ -5,6 +5,7 @@ grid-template-columns: 1fr 4fr;
 grid-template-rows: 1fr 5fr;
 border: 2px solid red;
 background-color: gainsboro;
+height: 100vh;;
 }
 
 .sidebar {
@@ -17,6 +18,15 @@ gap: 5px;
 
 }
 
+.dashboard {
+display: flex;
+align-content: center;
+} 
+
+
+i {
+margin:20px;
+}
 .firstblock ul,
 .secondblock ul {
 list-style: none;
