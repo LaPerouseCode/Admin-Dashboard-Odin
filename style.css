@@ -1,0 +1,23 @@
+.big-container {
+
+display:grid;
+grid-template-columns: 1fr 4fr;
+grid-template-rows: 1fr 5fr;
+border: 2px solid red;
+background-color: gainsboro;
+}
+
+.sidebar {
+background-color: aqua;
+grid-column: 1 / 2;
+grid-row: 1 / 3;
+}
+
+    
+.header {
+background-color:bisque;
+}
+
+.content {
+background-color:rgb(196, 204, 255);
+}
