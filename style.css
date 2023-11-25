@@ -1,5 +1,8 @@
-.big-container {
+/* * { 
+    border: 1px solid red 
+} */
 
+.big-container {
 display:grid;
 grid-template-columns: 1fr 4fr;
 grid-template-rows: 1fr 5fr;
@@ -59,8 +62,22 @@ grid-row: 2 / 3;
 }
 .searchbar {
 grid-column: 1 / 3;
+display: flex;
+align-items: baseline;
+
 
 }
+.bar {
+        float: left;
+        padding: 6px;
+        border: none;
+        margin-top: 8px;
+        font-size: 17px;
+        width: 700px;
+        margin-left: 15px;
+        border-radius: 20px;
+}
+
 .userinfo {
 grid-column: 1 / 2;
 grid-row: 2 / 3;
