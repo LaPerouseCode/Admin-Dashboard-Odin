@@ -154,3 +154,42 @@ margin-left: 10px;
     grid-column: 1 / span 2;
     grid-row: 1 / 2;
 }
+
+/* Style for each box */
+.box1,
+.box2,
+.box3,
+.box4,
+.box5,
+.box6 {
+    background-color: #f0f0f0; /* Adjust background color */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add shadow effect */
+}
+
+/* Style for the title within each box */
+.title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+/* Style for the small text within each box */
+.small-text {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 12px;
+}
+
+/* Style for the logos container within each box */
+.logos {
+    display: flex;
+    justify-content: flex-end; /* Align logos to the right */
+}
+
+/* Style for individual logos within the logos container */
+.logos img {
+    width: 30px; /* Adjust the size of the logos */
+    margin-left: 8px; /* Adjust spacing between logos */
+}
