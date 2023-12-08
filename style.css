@@ -126,13 +126,31 @@ justify-content: center;
 font-size: 14px;
 }
 
+.flexcontent {
+    display:flex;
+    flex-direction: column;
+}
+
 .content {
 background-color:rgb(196, 204, 255);
 display: grid;
 grid-template-columns: 3fr 1fr;
 }
+
 .yourprojects {
 display: grid;
+grid-template-columns: 1fr 1fr; /* Two columns */
+grid-template-rows: auto, auto, auto, auto;
+gap: 10px; /* Adjust gap between grid items */
+grid-template-areas:
+        "h3 h3"
+        "box1 box2"
+        "box3 box4"
+        "box5 box6";
+margin-left: 10px;
+}
 
-
+.titleprojects {
+    grid-column: 1 / span 2;
+    grid-row: 1 / 2;
 }
