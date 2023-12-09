@@ -142,7 +142,7 @@ grid-template-columns: 3fr 1fr;
 .yourprojects {
 display: grid;
 grid-template-columns: 1fr 1fr; /* Two columns */
-grid-template-rows: auto, auto, auto, auto;
+grid-template-rows: 0.27fr 1fr 1fr 1fr;
 gap: 10px;
 grid-template-areas:
         "h3 h3"
@@ -156,7 +156,6 @@ margin-bottom: 20px;
 .titleprojects {
     font-weight: bold;
     grid-column: 1 / span 2;
-    grid-row: 1 / 2;
     text-align: left;
     
 }
@@ -219,8 +218,8 @@ margin-bottom: 20px;
 
 h3 {
     padding-top: 10px;
-    margin-bottom: auto;
-    margin: 0;
+    margin-bottom: 1px;
+
 }
 
 .minicontainer2 {
