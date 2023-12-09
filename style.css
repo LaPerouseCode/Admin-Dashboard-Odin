@@ -130,33 +130,38 @@ font-size: 14px;
 .flexcontent {
     display:flex;
     flex-direction: column;
+    justify-content: space-between; /* To separate Your Projects and Announcements */
+    gap: 20px; /* Adjust the gap between sections */
 }
 
 .content {
 background-color:rgb(196, 204, 255);
 display: grid;
 grid-template-columns: 3fr 1fr;
+gap: 20px;
 }
 
 .yourprojects {
 display: grid;
 grid-template-columns: 1fr 1fr; /* Two columns */
 grid-template-rows: auto, auto, auto, auto;
-gap: 10px; /* Adjust gap between grid items */
+gap: 10px;
 grid-template-areas:
         "h3 h3"
         "box1 box2"
         "box3 box4"
         "box5 box6";
 margin-left: 10px;
+margin-bottom: 20px;
 }
 
 .titleprojects {
     font-weight: bold;
     grid-column: 1 / span 2;
     grid-row: 1 / 2;
-    margin: 15px;
     margin-bottom: 3px;
+    text-align: left;
+    
 }
 
 /* Style for each box */
@@ -171,14 +176,6 @@ margin-left: 10px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add shadow effect */
 }
-
-/* Style for the title within each box */
-.title {
-    font-size: 20px;
-    font-weight: bold;
-    margin-bottom: 8px;
-}
-
 /* Style for the small text within each box */
 .small-text {
     font-size: 14px;
@@ -212,6 +209,7 @@ margin-left: 10px;
     align-items: center;
     text-align: left;
     margin: 10px;
+    gap:20px;
 }
 
 .minicontainer1 {
@@ -220,4 +218,36 @@ margin-left: 10px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add shadow effect */
 
+}
+
+h3 {
+    padding-top: 10px;
+    margin-bottom: 3px;
+}
+
+.minicontainer2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align items to the left */
+    gap: 10px; /* Adjust the gap between items */
+    padding-left: 20px; /* Add left padding */
+}
+.compartiment {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    gap: 10px; /* Adjust the gap between items */
+    background-color: #f0f0f0; /* Adjust background color */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add shadow effect */
+    padding: 15px;
+}
+.compartiment img {
+    height: 30px;
+    width: 30px;
+}
+
+.columns {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
